@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "62e0d217-6de7-44cb-8524-2e5bac2c4654++6807",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "62e0d217-6de7-44cb-8524-2e5bac2c4654++6807" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "62e0d217-6de7-44cb-8524-2e5bac2c4654++6807" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50E7FB10-315E-40EB-A45E-86C621B48AA7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "62e0d217-6de7-44cb-8524-2e5bac2c4654++6807" : "svnSrc\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KtisOn",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "platforms\/ios\/KtisOn.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/10.220.68.79\/svn\/ktison",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "62e0d217-6de7-44cb-8524-2e5bac2c4654++6807"
+    }
+  ]
+}

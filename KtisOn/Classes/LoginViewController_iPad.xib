@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="KeyboardView" destination="kRn-ds-MSu" id="pkA-qY-oOb"/>
+                <outlet property="_agreeOff" destination="1eb-p1-lmy" id="aoN-Ld-Uai"/>
+                <outlet property="_idInputView" destination="TYN-zN-E3L" id="tEL-lv-Gts"/>
+                <outlet property="_inputText1" destination="vSp-Yh-Ub3" id="VgB-YQ-fic"/>
+                <outlet property="_inputText2" destination="RSk-4D-zJh" id="pbd-5c-AdY"/>
+                <outlet property="_nextBtn" destination="QaX-xh-ZMK" id="Bhm-1q-hVb"/>
+                <outlet property="_otpDesc" destination="dhL-2M-ind" id="jqh-db-b0A"/>
+                <outlet property="_otpSendButton" destination="Wxb-1h-LFR" id="fRM-au-1pa"/>
+                <outlet property="_policyView" destination="Rl7-lr-yug" id="OlC-Sr-vxM"/>
+                <outlet property="_titleLabel" destination="Tb0-83-ira" id="CG4-Ac-Xjm"/>
+                <outlet property="arrowDown" destination="nxf-Mt-RZ5" id="9Ab-no-HmJ"/>
+                <outlet property="arrowUp" destination="eyw-Pp-uTo" id="Yvw-1v-FUn"/>
+                <outlet property="headerView" destination="cEz-to-krq" id="acZ-Az-DpC"/>
+                <outlet property="idSaveBtnOff" destination="ZdL-os-RBd" id="1dg-nr-cAr"/>
+                <outlet property="idSaveBtnOn" destination="p02-PL-PgC" id="dMv-sD-hQ6"/>
+                <outlet property="idSaveLabel" destination="BKG-t3-xjA" id="1Vt-wg-Ghx"/>
+                <outlet property="keyPadBtn" destination="9p8-pu-1Ju" id="0ch-Vw-k6F"/>
+                <outlet property="otpTimeOut" destination="kN9-90-mXb" id="X88-BY-G8g"/>
+                <outlet property="view" destination="1" id="Kg3-RL-SnJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" id="lbr-WF-uJb">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="TYN-zN-E3L" userLabel="inputView">
+                    <rect key="frame" x="114" y="272" width="540" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="입력시간 03:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kN9-90-mXb">
+                            <rect key="frame" x="8" y="77" width="116" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="vSp-Yh-Ub3">
+                            <rect key="frame" x="8" y="6" width="512" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.270588249" green="0.270588249" blue="0.270588249" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" id="RSk-4D-zJh">
+                            <rect key="frame" x="8" y="44" width="402" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.270588249" green="0.270588249" blue="0.270588249" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wxb-1h-LFR">
+                            <rect key="frame" x="419" y="42" width="101" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="코드발송" backgroundImage="btn_login_save_new.png">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="titleShadowColor" red="0.57647058823529407" green="0.58039215686274515" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_login_save_select_new.png">
+                                <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="otpCodeSend:" destination="-1" eventType="touchUpInside" id="peH-me-qns"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID 저장" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BKG-t3-xjA">
+                            <rect key="frame" x="470" y="78" width="56" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p02-PL-PgC" userLabel="idSave- on">
+                            <rect key="frame" x="440" y="81" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="selectbox_login_select.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="idSaveOffBtnClick:" destination="-1" eventType="touchUpInside" id="tYZ-k7-LKw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZdL-os-RBd" userLabel="idSave- off">
+                            <rect key="frame" x="440" y="81" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="selectbox_login.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="idSaveOffBtnClick:" destination="-1" eventType="touchUpInside" id="MfW-KU-Yg1"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="HR에 등록된 휴대전화로 발송됩니다." selectable="NO" id="dhL-2M-ind">
+                            <rect key="frame" x="5" y="98" width="512" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88627457620000005" green="0.88235300780000003" blue="0.87450987099999999" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="cEz-to-krq" userLabel="headerView">
+                    <rect key="frame" x="114" y="84" width="540" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9p8-pu-1Ju">
+                            <rect key="frame" x="8" y="7" width="71" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <state key="normal" title="키보드 열기">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_login_save_select_new.png"/>
+                            <connections>
+                                <action selector="keyPadBtnClick:" destination="-1" eventType="touchUpInside" id="IRR-4D-Dfm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="eyw-Pp-uTo" userLabel="arrow_up">
+                            <rect key="frame" x="77" y="7" width="24" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="arrow_up_icon.png"/>
+                            <connections>
+                                <action selector="keyPadBtnClick:" destination="-1" eventType="touchUpInside" id="yl4-Am-iFT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="nxf-Mt-RZ5" userLabel="arrow_down">
+                            <rect key="frame" x="77" y="7" width="24" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="arrow_down_icon.png"/>
+                            <state key="highlighted" backgroundImage="selectbox_login.png"/>
+                            <connections>
+                                <action selector="keyPadBtnClick:" destination="-1" eventType="touchUpInside" id="Sfp-0O-9GR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88627457620000005" green="0.88235300780000003" blue="0.87450987099999999" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title_login.png" id="TE2-zM-2G9">
+                    <rect key="frame" x="114" y="42" width="540" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tb0-83-ira">
+                    <rect key="frame" x="322" y="42" width="124" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" id="Rl7-lr-yug">
+                    <rect key="frame" x="114" y="400" width="540" height="326"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aP6-od-8vr" userLabel="Button - on">
+                            <rect key="frame" x="221" y="184" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="selectbox_login.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressAgree:" destination="-1" eventType="touchUpInside" id="C4z-3I-tky"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1eb-p1-lmy" userLabel="Button - off">
+                            <rect key="frame" x="221" y="184" width="22" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="selectbox_login_select.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressAgree:" destination="-1" eventType="touchUpInside" id="OV3-OW-olH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동의합니다" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cw9-Rf-HzQ">
+                            <rect key="frame" x="251" y="180" width="141" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" id="vuM-tB-OPv">
+                            <rect key="frame" x="14" y="45" width="512" height="127"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <string key="text">[이용안내]
+
+ktis on에서는 단말명 및 단말기식별번호 외에 어떠한 개인정보도 수집하지 않습니다.
+
+※ 앱관련 기능문의는 IT지원센터 (3215-2167, 2271)로 하여주시기 바랍니다.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88627457620000005" green="0.88235300780000003" blue="0.87450987099999999" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QaX-xh-ZMK">
+                    <rect key="frame" x="130" y="585" width="508" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressNextBtn:" destination="-1" eventType="touchUpInside" id="0cY-5E-nR8"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="kRn-ds-MSu">
+                    <rect key="frame" x="114" y="117" width="540" height="136"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keypad2.png" id="EnD-jZ-YQQ">
+                            <rect key="frame" x="98" y="4" width="337" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88627457620000005" green="0.88235300780000003" blue="0.87450987099999999" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_down_icon.png" width="128" height="128"/>
+        <image name="arrow_up_icon.png" width="128" height="128"/>
+        <image name="background.png" width="320" height="480"/>
+        <image name="btn_login_save_new.png" width="254" height="40"/>
+        <image name="btn_login_save_select_new.png" width="254" height="40"/>
+        <image name="keypad2.png" width="700" height="239"/>
+        <image name="selectbox_login.png" width="22" height="22"/>
+        <image name="selectbox_login_select.png" width="22" height="22"/>
+        <image name="title_login.png" width="270" height="42"/>
+    </resources>
+</document>
