@@ -98,14 +98,11 @@
     NSDictionary *ssoStatDic = [[SSOController sharedInstance] requestSSOStatus];
     // 인증정보가 없는 경우 로그인으로 이동
     
-    //gclee
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"my dictionary is %@", ssoStatDic]                                             delegate:self cancelButtonTitle:@"닫기" otherButtonTitles:nil, nil];
-//    [alert show];
-    //
-
     if (!ssoStatDic){
         [self sessionClose];
     }
+    
+    NSLog(@"ssoStatDic :%@", [NSString stringWithFormat:@"my dictionary is %@", ssoStatDic]);
     
     // 로깅
     NSString *credentialUrl;
@@ -131,6 +128,8 @@
         }
         else
         {
+             NSLog(@"nomal URL and no sso login again");
+            
             credentialUrl = [[SSOController sharedInstance] requestCredentialUrl:[NSString stringWithFormat:@"%@%@", NOTICE_URL, _noticeNo]];
         }
     }
@@ -238,7 +237,7 @@
     
     //gclee
     // 인증 만료시 로그인 페이지로 이동
-//    [self goLogin];
+    [self goLogin];
 }
 
 - (void)goHome
@@ -359,19 +358,7 @@
 
 - (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
 {
-//    NSString* originalRequestUrl = [request.URL absoluteString];
-//    
-//    _isMailDes = false;
-//    if(originalRequestUrl != nil){
-//        if ([originalRequestUrl rangeOfString:@"mobile/mail/view.do"].location != NSNotFound) {
-//            
-//            _isMailDes = true;
-//        }
-//    }
-    
     return [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
-    
-    //return true;
 }
 
 - (void) webViewDidStartLoad:(UIWebView*)theWebView

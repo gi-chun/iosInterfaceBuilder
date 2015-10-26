@@ -260,13 +260,6 @@
         
         _pushOpenUrl = [info objectForKey:@"linkUrl"];
         
-//        if ([_pushOpenUrl rangeOfString:@"mail."].location != NSNotFound) {
-//            
-//            _pushOpenUrl = [_pushOpenUrl stringByReplacingOccurrencesOfString:@"mail."
-//                                                 withString:@"mmail."];
-//            
-//        }
-        
         // url이 없는 경우
         if ([_pushOpenUrl isEqualToString:@""] || !_pushOpenUrl) {
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[[info objectForKey:@"aps"] objectForKey:@"alert"]
@@ -292,14 +285,6 @@
     // 앱 실행중이 아닐 때
     else {
         _pushOpenUrl = [[info objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"linkUrl"];
-        
-//        if ([_pushOpenUrl rangeOfString:@"mail."].location != NSNotFound) {
-//            
-//            _pushOpenUrl = [_pushOpenUrl stringByReplacingOccurrencesOfString:@"mail."
-//                                                                   withString:@"mmail."];
-//            
-//        }
-        
         [self pushAction];
     }
 }
