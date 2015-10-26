@@ -97,8 +97,15 @@
 {
     NSDictionary *ssoStatDic = [[SSOController sharedInstance] requestSSOStatus];
     // 인증정보가 없는 경우 로그인으로 이동
-    if (!ssoStatDic)
+    
+    //gclee
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"my dictionary is %@", ssoStatDic]                                             delegate:self cancelButtonTitle:@"닫기" otherButtonTitles:nil, nil];
+//    [alert show];
+    //
+
+    if (!ssoStatDic){
         [self sessionClose];
+    }
     
     // 로깅
     NSString *credentialUrl;
@@ -229,6 +236,7 @@
     alert.tag = 1;
     [alert show];
     
+    //gclee
     // 인증 만료시 로그인 페이지로 이동
 //    [self goLogin];
 }

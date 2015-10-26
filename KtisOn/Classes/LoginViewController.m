@@ -289,7 +289,9 @@ double timerInterval = 1.0f;
         idSaveBtnOn.hidden = NO;
         idSaveBtnOff.hidden = YES;
         NSString * strTemp = [[SettingManager sharedInstance] getIdValue];
-        [_inputText1 setText:strTemp];
+        NSUInteger length = [strTemp length];
+        if(length > 0)
+            [_inputText1 setText:strTemp];
     }else{
         _idSaveFlag = false;
         idSaveBtnOn.hidden = YES;
@@ -489,22 +491,22 @@ double timerInterval = 1.0f;
     
     _progressFlag = LoginState_OTP_LOGIN; // 상태 시퀀스 (핀코드 등록)
     
-    _otpInputMinute = 3;
-    _otpInputSecond = 0;
-    NSString *strValue = [NSString stringWithFormat:@"입력시간 %02d:%02d", _otpInputMinute, _otpInputSecond];
-    [otpTimeOut setText:strValue];
-    [self stopOtpTimer];
-    
     if(!orientFlag){
         [_inputText1 setText:@""];  // 텍스트 필드 1 공백
         [_inputText2 setText:@""];  // 텍스트 필드 2 공백
+        
+        _otpInputMinute = 3;
+        _otpInputSecond = 0;
+        NSString *strValue = [NSString stringWithFormat:@"입력시간 %02d:%02d", _otpInputMinute, _otpInputSecond];
+        [otpTimeOut setText:strValue];
+        [self stopOtpTimer];
+        
+        [_inputText2 setEnabled:FALSE];
+        [_nextBtn setEnabled:FALSE];
+        [_otpSendButton setEnabled:true];
     }
 
     [_inputText1 setEnabled:FALSE];
-    
-    [_inputText2 setEnabled:FALSE];
-    [_nextBtn setEnabled:FALSE];
-    [_otpSendButton setEnabled:true];
     
     //CGFloat screenWidth  = [[UIScreen mainScreen] bounds].size.width;
     
@@ -639,7 +641,7 @@ double timerInterval = 1.0f;
 //            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"디바이스 아이디 없다" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"확인", nil];
 //            [alert show];
 
-            return;
+            //return;
         }
         else
         {
@@ -658,7 +660,7 @@ double timerInterval = 1.0f;
         
         [_inputText2 setText:@""];
         
-        return;
+        //return;
     }
     
     // 영어 대문자, 소문자, 숫자, 특수기호 4가지 중 3가지 이상을 혼용하였을 경우 8자리 이상, 2가지를 혼용하였을 경우 10자리 이상

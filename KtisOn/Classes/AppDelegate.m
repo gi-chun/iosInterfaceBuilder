@@ -293,12 +293,12 @@
     else {
         _pushOpenUrl = [[info objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"] objectForKey:@"linkUrl"];
         
-        if ([_pushOpenUrl rangeOfString:@"mail."].location != NSNotFound) {
-            
-            _pushOpenUrl = [_pushOpenUrl stringByReplacingOccurrencesOfString:@"mail."
-                                                                   withString:@"mmail."];
-            
-        }
+//        if ([_pushOpenUrl rangeOfString:@"mail."].location != NSNotFound) {
+//            
+//            _pushOpenUrl = [_pushOpenUrl stringByReplacingOccurrencesOfString:@"mail."
+//                                                                   withString:@"mmail."];
+//            
+//        }
         
         [self pushAction];
     }
