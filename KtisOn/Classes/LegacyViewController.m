@@ -235,7 +235,6 @@
     alert.tag = 1;
     [alert show];
     
-    //gclee
     // 인증 만료시 로그인 페이지로 이동
     [self goLogin];
 }

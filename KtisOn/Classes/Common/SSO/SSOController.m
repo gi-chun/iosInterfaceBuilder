@@ -200,7 +200,6 @@ static SSOController *_sharedInstance = nil;
                                                                                       NULL, (CFStringRef)@"!*’();:@&=+$,/?%#[]",
                                                                                       kCFStringEncodingUTF8));
     
-    //gclee
 //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:targetUrl                                             delegate:self cancelButtonTitle:@"닫기" otherButtonTitles:nil, nil];
 //    [alert show];
     
@@ -213,7 +212,6 @@ static SSOController *_sharedInstance = nil;
     NSString *tokenUrl = [NSString stringWithFormat:@"%@appid=%@&apptoken=%@&credType=%@&returnURL=%@&ssosite=%@",
                           SSO_AUTH_SITE, AppID, token_res, cred, returnUrl, ssoSite];
     
-    //gclee
 //    UIAlertView *alert_ = [[UIAlertView alloc] initWithTitle:nil message:tokenUrl                                             delegate:self cancelButtonTitle:@"닫기" otherButtonTitles:nil, nil];
 //    [alert_ show];
     
